@@ -1,10 +1,10 @@
-## char->integer
-### 함수 이용 x
+## char -> integer
+ - ### 함수 이용 x
 ```
 char a = '1';
 int i = a - '0';
 ```
-### 함수 이용
+ - ### 함수 이용
 ```
 char str[] = "123";
 int i = 10;
@@ -12,24 +12,24 @@ int i_ch;
 i_ch = atoi(str); 
 // "2005년도 10월" -> 2005
 ```
-## char->float
+## char -> float
 ```
 float f;
 d = atof(str);
 ```
-## integer->char
+## integer -> char
 ```
 int i = 10;
 char c_int[10];
 itoa(i, c_int, 10); // int 변수, 저장할 char 변수, 진수
 ```
-## string->int
+## string - >int
 ```
 string str = "34";
 int i = atoi(str.c_str());
 // atoi(char*)
 ```
-## int->string
+## int -> string
 ```
 int i = 5;
 string str = to_string(i);
