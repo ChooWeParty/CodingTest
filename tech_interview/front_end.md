@@ -1,3 +1,7 @@
+#Front End
+- 프론트엔드 웹 개발은 클라이언트 사이드 개발이다.
+- 웹 페이지 혹은 웹 어플리케이션을 위한 HTML, CSS, Javascript를 개발한다.
+
 ## HTML (HyperText Markup Language)
 - 팀 버너스리에 의해 제안된 웹 페이지의 구조를 기술하기 위한 마크업 언어.
 - 2008년 1월 HTML 5의 초안 작업이 W3C에 의해 발표 되었다.
@@ -61,13 +65,29 @@
 ### REST (Representational State Transfer)
 - HTTP의 주요 저자인 로이 필딩에 의해 제안된 네트워크 아키텍처 원리의 모음.
 - `네트워크 아키텍처 원리`란 리소스을 정의하고 리소스에 대한 주소를 지정하는 방법 전반을 일컫음.
+
 - **REST 구성**
   - 자원: `URI`
   - 행위: `HTTP Method` (`GET`, `POST`, `PUT`, `DELETE`)
   - 표현
+
 - **REST 디자인 가이드**
-  1. URI는 정보의 자원을 표현해야한다.
-  2. 자원에 대한 행위는 HTTP Method로 표현한다.
+  - URI는 정보의 자원을 표현해야한다.
+  - 자원에 대한 행위는 HTTP Method로 표현한다.
+
+- **REST 특징**
+  - Client / Server Architecture
+    - Client / Server 구조는 User Interface와 Data Storage를 분리 함으로서, 각각이 개발해야할 내용이 명확해지고 서로 간의 의존성이 줄어듬.
+  - Stateless
+    - API 서버는 세션이나 쿠키 정보를 저장, 관리 하지 않음.
+    - API 서버는 요청에 대한 단순한 처리만 하면 되기 때문에, 구현이 단순해지고 자유도가 높아짐.
+  - Cacheable
+    - HTTP의 웹표준을 그대로 사용하기 때문에, HTTP가 가진 특징 중하나인 캐싱을 사용할 수 있음.
+  - Layered System
+    - REST API 서버는 다중 계층으로 구성될 수 있으며, 로드 밸런서나 공유 캐시를 활성화 하여 시스템의 확장성을 높힐 수 있다.
+  - Uniform Interface
+    - RESTFul 시스템의 기본은 통일된 인터페이스이다.
+    - URI, HTTP Method를 이용해 통일된 인터페이스를 제공함으로서, 아키텍처를 단순화 하고 각 부분을 독립적으로 발전시킬 수 있다.
 
 ### HTTP 접근 제어 (CORS)
 - 처음 전송된 리소스의 도메인과 다른 도메인에서 리소스가 요청될 경우를 **Cross-Origin HTTP 요청**이라 함.
